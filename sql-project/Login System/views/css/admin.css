@@ -1,0 +1,61 @@
+@import url(fonts.css);
+
+.container-display {
+  position: sticky;
+}
+
+.container-fetch,
+.container-insert {
+  display: none;
+}
+
+.display {
+  display: block;
+}
+
+.container-display .totop-a {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: red;
+}
+
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container table tr {
+  border-bottom: 1px solid #555;
+}
+
+.container table tr th {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  text-align: left;
+  font-family: 'Raleway';
+  font-weight: 300;
+  color: white;
+}
+
+.container table tr button {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container table tr form {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.container table tr form button {
+}

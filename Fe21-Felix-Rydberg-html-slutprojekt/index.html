@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="Felix Rydberg">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="grid-container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="information.html">Information</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Imed att google chrome är bajs kan man inte använda media funktionen på videos :/-->
+      <video class="main-video" autoplay muted loop poster="image/banner.png">
+        <source src="video/1080p.mp4" media="(max-width: 1080px)" type="video/mp4">
+        <source src="video/720p.mp4" media="(max-width: 720px)" type="video/mp4">
+        <source src="video/360p.mp4" media="(max-width: 360px)" type="video/mp4">
+      </video>
+      <article class="main-article">
+        <h1>Hello!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis leo tellus, quis blandit tortor volutpat a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;.</p>
+      </article>
+      <div class="flex-container">
+        <article><a href="projectfiles/dogo/index.html" target="_blank">
+          <picture>
+            <source srcset="image/Projects/Project1/160x160.png" media="(max-width: 500px)">
+            <source srcset="image/Projects/Project1/240x240.png" media="(max-width: 700px)">
+            <img src="image/Projects/Project1/320x320.png" alt="" />
+          </picture>
+          </a><p>Dogos</p>
+        </article>
+        <article><a href="projectfiles/cat/index.html" target="_blank">
+          <picture>
+            <source srcset="image/Projects/Project2/160x160.png" media="(max-width: 500px)">
+            <source srcset="image/Projects/Project2/240x240.png" media="(max-width: 700px)">
+            <img src="image/Projects/Project2/320x320.png" alt="" />
+          </picture>
+          </a><p>Kittens</p>
+        </article>
+        <article><a href="projectfiles/Lorem ipsum/index.html" target="_blank">
+          <picture>
+            <source srcset="image/Projects/Project3/160x160.png" media="(max-width: 500px)">
+            <source srcset="image/Projects/Project3/240x240.png" media="(max-width: 700px)">
+            <img src="image/Projects/Project3/320x320.png" alt="" />
+          </picture>
+          </a><p>Lorem ipsum?????</p>
+        </article>
+        <article><a href="projectfiles/placebear/index.html" target="_blank">
+          <picture>
+            <source srcset="image/Projects/Project4/160x160.png" media="(max-width: 500px)">
+            <source srcset="image/Projects/Project4/240x240.png" media="(max-width: 700px)">
+            <img src="image/Projects/Project4/320x320.png" alt="" />
+          </picture>
+          </a><p>bear :)</p>
+        </article>
+        <article><a href="projectfiles/placeholder/index.html" target="_blank">
+          <picture>
+            <source srcset="image/Projects/Project5/160x160.png" media="(max-width: 500px)">
+            <source srcset="image/Projects/Project5/240x240.png" media="(max-width: 700px)">
+            <img src="image/Projects/Project5/320x320.png" alt="" />
+          </picture>
+          </a><p>placeholder????</p>
+        </article>
+        <article><a href="projectfiles/tech/index.html" target="_blank">
+          <picture>
+            <source srcset="image/Projects/Project6/160x160.png" media="(max-width: 500px)">
+            <source srcset="image/Projects/Project6/240x240.png" media="(max-width: 700px)">
+            <img src="image/Projects/Project6/320x320.png" alt="" />
+          </picture>
+          </a><p>tech</p>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li><p class="footer-logo">FelixRydberg</p></li>
+        <li><img class="footer-logo" src="image/logo.png"></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/register.css" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="grid-container">
+    <header><%- include("include/header.ejs") %></header>
+    <main>
+      <figure>
+        <article>
+          <form class="" method="POST" action="/register">
+            <input
+              type="text"
+              class=""
+              id="name"
+              name="name"
+              placeholder="name"
+              required
+            />
+            <input
+              type="email"
+              class=""
+              id="email"
+              name="email"
+              placeholder="email"
+              required
+            />
+            <input
+              type="password"
+              class=""
+              id="password"
+              name="pwd"
+              placeholder="password"
+              required
+            />
+            <button type="submit">Register</button>
+          </form>
+          <a href="/login">Login</a>
+        </article>
+      </figure>
+    </main>
+    <footer></footer>
+  </div>
+</body>

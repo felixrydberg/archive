@@ -1,0 +1,20 @@
+header {
+    display: flex;
+}
+
+.nav-link {
+    display: block;
+    padding: 16px 24px 16px 24px;
+    background-color: #222;
+    color: rgb(234, 234, 234);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    border: none;
+    font-size: 1rem;
+}
+
+
+.nav-link:hover {
+    background-color: #333;
+}

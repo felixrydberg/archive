@@ -1,0 +1,45 @@
+@import url(assets/fonts/fonts.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway-Regular';
+}
+
+body {
+    background: #222;
+}
+
+.dummy-text {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .dummy-text div {
+    display: block;
+    margin: 0 1rem 0 1rem;
+    border-radius: 0.55rem;
+    height: 1.1rem;
+
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: loadingGradiant;
+    animation-timing-function: linear;
+  }
+
+  @keyframes loadingGradiant {
+    0% {
+        background-color: #333;
+    }
+
+    50% {
+        background-color: #444;
+    }
+
+    100% {
+        background-color: #333;
+    }
+  }

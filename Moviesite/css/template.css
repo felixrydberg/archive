@@ -1,0 +1,47 @@
+.container {
+  display: grid;
+  grid-template-columns: 10rem 2fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 15px;
+  grid-template-areas:
+    'header header header'
+    '... main ...'
+    'footer footer footer';
+}
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.review {
+  display: flex;
+  width: 60vw;
+
+  margin: 0 auto;
+  align-items: center;
+}
+
+.movie > h1,
+.poster > img {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.movie > p {
+  margin: 1rem;
+}
+.poster {
+  display: flex;
+  justify-content: center;
+}
+.poster > img {
+  max-width: 20rem;
+  max-height: 20rem;
+}

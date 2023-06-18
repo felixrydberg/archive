@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+}
+
+body {
+    background: #222;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: auto auto auto / auto;
+}
+
+header {
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+} 
+
+header h1 {
+    font:3rem Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 2rem 0 0 0;
+}
+
+main {
+    grid-row: 2;
+    display: grid;
+    grid-template: auto auto auto auto / auto;
+}
+
+main article {
+    padding: 5rem 0 5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .rps-instructions {
+    grid-row: 1;
+    font:1rem Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+main .rps-instructions h1{
+    text-align: center;
+    flex-basis: 100%;
+}
+
+main .rps-instructions ul li{
+    list-style: none;
+}
+
+main .rps-steps {
+    grid-row: 2;
+}
+
+.container {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .rps-steps button, main .rps-results button {
+    text-align: center;
+    flex-basis: 100%;
+    margin: 1rem 0 0 0;
+    padding: 0.5rem 0 0.5rem 0;
+    background: #222;
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+    font:1rem Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+main .rps-steps input {
+    font-size: 1rem;
+    padding: 1rem;
+    background: #222;
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+    color: white;
+    font:1rem Arial, Helvetica, sans-serif;
+}
+
+main .rps-player {
+    opacity: 0;
+    grid-row: 3;
+}
+
+
+main .rps-player h1, main .rps-player p {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+    font:1rem Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+main .rps-player h1{
+    font: 2rem Arial, Helvetica, sans-serif;
+}
+
+main .rps-player button {
+    font-size: 3rem;
+    background: #222;
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+    width: 4rem;
+}
+
+main .rps-results {
+    opacity: 0;
+    grid-row: 4;
+    font:1rem Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+main .rps-results h1{
+    text-align: center;
+    flex-basis: 100%;
+}
+
+
+
+main .rps-results button {
+    opacity: 0;
+}
+
+footer {
+    grid-row: 3;
+}
+
+button {
+    cursor: pointer;
+}

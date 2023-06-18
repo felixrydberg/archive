@@ -1,0 +1,55 @@
+.img-display {
+    width: fit-content;
+    list-style: none;
+    background: #333;
+    padding: 16px;
+    border: #444 solid 1px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 200px;
+}
+
+.img-display.remove-btn-container {
+    padding: 16px 48px 16px 16px;
+}
+
+.img-display .remove-btn {
+    padding: 8px 8px 8px 8px;
+}
+
+.movie-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-display .img-display {
+    margin: 20vh 0 0 0;
+}
+
+.img-display img {
+    width: 200px;
+}
+
+.img-display h3 {
+    margin: 0 0 0 16px;
+}
+.img-display > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.img-display a {
+    text-align: center;
+    border-radius: 4px;
+}
+
+.img-display a:hover {
+    background-color: #555;
+}
+
+.movies h1 {
+    color: white;
+    margin: 1rem;
+}

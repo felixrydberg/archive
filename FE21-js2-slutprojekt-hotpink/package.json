@@ -1,0 +1,29 @@
+{
+  "name": "fe21-js2-hotpink",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --dist-dir docs --public-url ./",
+    "clean": "del-cli ./.parcel-cache ./docs ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixrydberg/FE21-js2-hotpink.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felixrydberg/FE21-js2-hotpink/issues"
+  },
+  "homepage": "https://github.com/felixrydberg/FE21-js2-hotpink#readme",
+  "devDependencies": {
+    "del-cli": "^4.0.1",
+    "parcel": "^2.3.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "firebase": "^9.6.9"
+  }
+}

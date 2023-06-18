@@ -1,0 +1,111 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="grid-container">
+    <header id="top"><%- include("include/header.ejs") %></header>
+    <main>
+      <figure class="commands">
+        <p class="title">Commands</p>
+        <button class="update-ships">Update ship db</button>
+      </figure>
+      <div class="container-display">
+        <a class="totop-a" href="#top"></a>
+        <button class="toggle-btn">Fetchs</button>
+      </div>
+      <div class="container-fetch">
+        <div class="fetch-shortcuts">
+          <a href="#ships">ships</a>
+          <a href="#badges">badges</a>
+          <a href="#ranks">ranks</a>
+          <a href="#linkranks">linkranks</a>
+          <a href="#linkships">linkships</a>
+          <a href="#linkbadges">linkbadges</a>
+        </div>
+        <figure class=""></figure>
+        <figure class="ships container" id="ships"></figure>
+        <figure class="badges container" id="badges"></figure>
+        <figure class="ranks container" id="ranks"></figure>
+        <figure class="linkranks container" id="linkranks"></figure>
+        <figure class="linkships container" id="linkships"></figure>
+        <figure class="linkbadges container" id="linkbadges"></figure>
+      </div>
+      <div class="container-insert display">
+        <form method="POST" class="ship">
+          <input
+            type="text"
+            name="manufacturer"
+            id="ship-manufacturer"
+            placeholder="Manufacturer:"
+            required
+          /><label for="ship-manufacturer">*</label>
+          <input
+            type="text"
+            name="name"
+            id="ship-name"
+            placeholder="Name"
+            required
+          /><label for="ship-name">*</label>
+          <input
+            type="text"
+            name="career"
+            id="ship-career"
+            placeholder="Career"
+            required
+          /><label for="ship-career">*</label>
+          <input type="text" name="focus" id="ship-focus" placeholder="Focus" />
+          <input type="text" name="class" id="ship-class" placeholder="Class" />
+          <input
+            type="text"
+            name="size"
+            id="ship-size"
+            placeholder="Size"
+            required
+          /><label for="ship-size">*</label>
+          <button type="submit">Insert</button>
+        </form>
+        <form method="POST" class="rank">
+          <input
+            type="text"
+            name="name"
+            id="rank-name"
+            required
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            name="rank"
+            id="rank-rank"
+            required
+            placeholder="Rank (Number, lower is better)"
+          />
+          <button type="submit">Insert</button>
+        </form>
+        <form method="POST" class="badge">
+          <input
+            type="text"
+            name="name"
+            id="badge-name"
+            required
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            name="rank"
+            id="badge-rank"
+            required
+            placeholder="Rank (Number, lower is better)"
+          />
+          <button type="submit">Insert</button>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </div>
+  <script src="js/admin.js" type="module"></script>
+</body>

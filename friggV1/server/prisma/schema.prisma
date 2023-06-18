@@ -1,0 +1,71 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model users {
+  userID  Int @default(autoincrement()) @id
+  email String @unique @db.VarChar(128)
+  name String @unique @db.VarChar(128)
+  pwd String @db.VarChar(128)
+  created_at DateTime @default(now())
+  admin Boolean @default(false)
+  org_member Boolean @default(false)
+  ships linkships[]
+  badges linkbadges[]
+  ranks linkranks[]
+}
+
+model ships {
+  shipID  Int  @id 
+  manufacturer String
+  name String
+  career String?
+  Focus String?
+  Class String?
+  Size String
+  ship linkships[]
+}
+
+model ranks {
+  rankID  Int @default(autoincrement()) @id
+  name String @unique
+  rank Int @default(10)
+  ranks linkranks[]
+}
+
+model badges {
+  badgeID  Int @default(autoincrement()) @id
+  name String @unique
+  type String 
+  badge linkbadges[]
+}
+
+model linkships {
+  linkID Int @id @default(autoincrement())
+  user users @relation(fields: [userID], references: [userID])
+  userID Int 
+  ships ships @relation(fields: [shipID], references: [shipID])
+  shipID Int
+}
+model linkbadges {
+  linkID Int @id @default(autoincrement())
+  user users @relation(fields: [userID], references: [userID])
+  userID Int 
+  badges badges @relation(fields: [badgeID], references: [badgeID])
+  badgeID Int
+}
+model linkranks {
+    linkID Int @id @default(autoincrement())
+  user users @relation(fields: [userID], references: [userID])
+  userID Int 
+  ranks ranks @relation(fields: [rankID], references: [rankID])
+  rankID Int
+}

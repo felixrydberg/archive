@@ -1,0 +1,4 @@
+@import "./app.css";
+@import "../components/signup/modal.css";
+@import "../components/header/header.css";
+@import "./movie.css";

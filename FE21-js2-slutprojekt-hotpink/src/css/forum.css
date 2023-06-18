@@ -1,0 +1,129 @@
+header {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.forum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.forum-wrapper {
+  grid-template: auto auto auto / auto;
+  display: grid;
+  height: auto;
+  background: linear-gradient(#141e30, #243b55);
+}
+
+main {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* Styling from Signup and Signin forms */
+main .category-wrapper {
+  overflow-y: scroll;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 2);
+  border-radius: 10px;
+  color: white;
+  height: 100%;
+}
+
+main h2 {
+  color: white;
+  margin: 1rem 0 -1rem 0;
+}
+
+/* main .form-container form {
+  display: grid;
+  grid-template: auto / 20% 60% 10% 10%;
+} */
+
+.post-forms {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  justify-content: center;
+  border: 0.1em dotted whitesmoke;
+}
+main .form-container form input,
+#message {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  margin-bottom: 0.07em;
+  border: none;
+  color: white;
+  resize: none;
+}
+
+input[type='submit'],
+input[type='reset'] {
+  cursor: pointer;
+}
+
+main .category-wrapper .message-wrapper {
+  display: grid;
+  grid-template: auto auto / 90% 10%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+
+main .category-wrapper .message-wrapper div {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template: auto auto / auto auto;
+}
+
+main .category-wrapper .message-wrapper div .post-id {
+  display: none;
+}
+
+main .category-wrapper .message-wrapper div .post-title {
+  font-size: 1rem;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+main .category-wrapper .message-wrapper div .poster {
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+main .category-wrapper .message-wrapper div .poster a {
+  color: white;
+}
+
+main .category-wrapper .message-wrapper div .timestamp {
+  color: rgb(53, 53, 53);
+  grid-row: 1;
+  grid-column: 2;
+}
+
+main .category-wrapper .message-wrapper button {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+}
+
+footer {
+  grid-column: 1;
+  grid-row: 3;
+}

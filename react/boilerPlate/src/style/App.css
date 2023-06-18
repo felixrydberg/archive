@@ -1,0 +1,45 @@
+body {
+    background-color: #222;
+}
+
+img {
+    height: 500px;
+}
+
+header.App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p, a {
+    font-family: monospace;
+}
+
+p {
+    font-size: 1.68rem;
+    color: white;
+}
+
+a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    animation-name: spin;
+    animation-duration: 6000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

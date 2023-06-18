@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotpink :poop: Sign in</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/sign.css" />
+    <script type="module" src="script/signin.ts"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header><img id="logotyp" src="/src/img/logo.svg" alt="" /></header>
+
+      <nav id="mainnav">
+        <input id="toggle" type="checkbox" />
+
+        <label class="toggle-container" for="toggle">
+          <span class="button button-toggle"></span>
+        </label>
+
+        <nav class="nav">
+          <a class="nav-item" href="index.html"
+            ><img class="nav-item" src="./img/bx-home.svg" alt=""
+          /></a>
+          <a class="nav-item" id="profile" href="profile.html"
+            ><img class="nav-item" src="./img/profile.svg" alt=""
+          /></a>
+          <a class="nav-item" id="signinbtn" href="signin.html"
+            ><img class="nav-item" src="./img/bxs-log-in.svg" alt=""
+          /></a>
+          <a class="nav-item" id="signupbtn" href="signup.html"
+            ><img class="nav-item" src="./img/bx-signup.svg" alt=""
+          /></a>
+          <a class="nav-item" id="logoutbtn"
+            ><img class="nav-item" src="./img/bxs-log-out.svg" alt=""
+          /></a>
+        </nav>
+      </nav>
+      <main>
+        <div id="signin">
+          <h3 id="signin-title">Login</h3>
+          <form class="form-signin">
+            <input class="form-name" type="text" placeholder="Username" />
+            <input class="form-pwd" type="password" placeholder="Password" />
+            <input type="submit" value="Sign in" />
+            <button id="register">
+              <a href="signup.html">Register here!</a>
+            </button>
+          </form>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>

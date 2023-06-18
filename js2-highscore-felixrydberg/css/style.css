@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 4rem auto 4rem / auto;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    grid-row: 1;
+    background: red;
+}
+
+main {
+    grid-row: 2;
+    background: white;
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+}
+
+main article h1 {
+    text-align: center;
+    margin: 1rem;
+}
+
+main .article-buttons {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+main .article-buttons .button-container {
+    display: flex;
+    justify-content: center;
+}
+
+main .article-buttons .button-container .rps-rock {
+    background: url("../img/sten.jpg");
+}
+
+main .article-buttons .button-container .rps-paper {
+    background: url("../img/paper.jpg");
+}
+
+main .article-buttons .button-container .rps-scissor {
+    background: url("../img/sax.jpg");
+}
+
+main .article-buttons .button-container .rps-rock, main .article-buttons .button-container .rps-paper, main .article-buttons .button-container .rps-scissor {
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    background-size: contain;
+} 
+
+main .article-leaderboard {
+    background: yellow;
+    display:grid;
+    grid-template: auto auto / 40% auto 40%;
+}
+
+main .article-leaderboard h1 {
+    grid-row: 1;
+}
+
+main .article-leaderboard ul {
+    grid-row: 2;
+}
+
+main .article-leaderboard, main .article-buttons{
+    display: grid;
+    grid-template: 20% auto / auto;
+}
+
+main .article-history {
+    display: grid;
+    grid-template: 10% auto / auto;
+}
+
+main .article-history {
+    grid-column: 2;
+    grid-row: 1/3;
+    background: limegreen;
+}
+
+main .article-history table {
+    display: grid;
+    grid-template: auto auto / auto;
+}
+
+footer {
+    grid-row: 3;
+    background: green;
+}

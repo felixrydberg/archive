@@ -1,0 +1,42 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="grid-container">
+    <header><%- include("include/header.ejs") %></header>
+    <%data.foreach((row) => {%>
+    <p><%=row%></p>
+    <%})%>
+    <main>
+      <figure class="banner">
+        <article>
+          <p>Org name / logo</p>
+        </article>
+      </figure>
+      <figure class="about" id="about">
+        <picture>
+          <source />
+          <img src="assets/img/" alt="" />
+        </picture>
+        <article>
+          <p class="title">About this website</p>
+          <p class="body-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis
+            urna mi. Nullam ullamcorper consectetur faucibus. Pellentesque
+            eleifend eget massa sed tempus. Ut ac egestas quam. Nullam semper
+            neque vel ex venenatis vehicula. Vestibulum egestas consectetur
+            vehicula. Suspendisse bibendum turpis id lobortis vulputate.
+            Suspendisse imperdiet finibus nisi quis malesuada. Suspendisse massa
+            risus, eleifend vitae cursus eget, ultricies ac risus. In viverra
+            arcu non lacus ornare rhoncus. Cras vitae fringilla elit.
+          </p>
+        </article>
+      </figure>
+    </main>
+    <footer></footer>
+  </div>
+</body>

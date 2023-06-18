@@ -1,0 +1,45 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="grid-container">
+    <header><%- include("include/header.ejs") %></header>
+    <main>
+      <figure>
+        <article>
+          <% if(messages.error){%> <% console.log(messages.error)%>
+          <p class="title"><%=messages.error%></p>
+          <%}%>
+          <form class="" method="POST" action="/login">
+            <label for="name"></label>
+            <input
+              type="text"
+              class=""
+              id="name"
+              name="name"
+              placeholder="name"
+              required
+            />
+            <label for="password"></label>
+            <input
+              type="password"
+              class=""
+              id="password"
+              name="password"
+              placeholder="password"
+              required
+            />
+            <button type="submit">Login</button>
+          </form>
+          <a href="/register">Register</a>
+        </article>
+      </figure>
+    </main>
+    <footer></footer>
+  </div>
+</body>
